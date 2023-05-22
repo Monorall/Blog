@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36dac607-bd69-411d-bd4e-02a540f01af5" name="Changes" comment="" />
+    <list default="true" id="36dac607-bd69-411d-bd4e-02a540f01af5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feauture/add_models" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -306,6 +308,7 @@
       <updated>1684751854429</updated>
       <workItem from="1684751855535" duration="3890000" />
       <workItem from="1684755759576" duration="527000" />
+      <workItem from="1684756298606" duration="317000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1684753621983</created>
@@ -321,15 +324,22 @@
       <option name="project" value="LOCAL" />
       <updated>1684755680876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1684756407580</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684756407580</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
     <MESSAGE value="Add models user and post, set dependencies between tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add models user and post, set dependencies between tables" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
 </project>
