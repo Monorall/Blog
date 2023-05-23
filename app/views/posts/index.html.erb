@@ -1,0 +1,12 @@
+<h1>All Posts</h1>
+
+<%= link_to 'New Post', new_post_path %>
+
+<% @posts.each do |post| %>
+  <div>
+    <h2><%= link_to post.title, post_path(post) %></h2>
+    <p>Posted by <%= post.user.email %></p>
+  </div>
+<% end %>
+
+<%= paginate @posts %>
