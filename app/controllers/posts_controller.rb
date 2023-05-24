@@ -2,7 +2,11 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
   def index
-    @posts = Post.all.page(params[:page]).per(5)
+    if params[:scope] == 'my_posts'
+      @posts = current_user.posts.paginate(page: params[:page], per_page: 5)
+    else
+      @posts = Post.all.paginate(page: params[:page], per_page: 5)
+    end
   end
 
   def show
