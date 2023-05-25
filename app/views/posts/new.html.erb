@@ -4,6 +4,14 @@
       <h1 class="text-center mb-4">New Post</h1>
 
       <%= form_for @post, html: { multipart: true, class: 'mb-4' } do |f| %>
+        <% if @post.errors.any? %>
+          <div class="alert alert-danger error-messages">
+            <% @post.errors.full_messages.each do |message| %>
+              <%= message %><br>
+            <% end %>
+          </div>
+        <% end %>
+
         <div class="form-group">
           <%= f.label :title %>
           <%= f.text_field :title, class: 'form-control' %>
