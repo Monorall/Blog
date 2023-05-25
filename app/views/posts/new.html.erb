@@ -1,0 +1,36 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="text-center mb-4">New Post</h1>
+
+      <%= form_for @post, html: { multipart: true, class: 'mb-4' } do |f| %>
+        <% if @post.errors.any? %>
+          <div class="alert alert-danger error-messages">
+            <% @post.errors.full_messages.each do |message| %>
+              <%= message %><br>
+            <% end %>
+          </div>
+        <% end %>
+
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :description %>
+          <%= f.text_area :description, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :images %>
+          <%= f.file_field :images, multiple: true, class: 'form-control' %>
+        </div>
+
+        <%= f.submit class: 'btn btn-primary btn-block' %>
+      <% end %>
+
+      <%= link_to 'Back', posts_path, class: 'btn btn-secondary btn-block' %>
+    </div>
+  </div>
+</div>

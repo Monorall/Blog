@@ -27,11 +27,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-
+gem 'bootstrap', '~> 5.1.3'
 gem 'devise'
 gem 'activeadmin'
 gem 'arctic_admin'
-gem 'rspec-rails', group: :test
+gem 'kaminari'
+gem 'rails-controller-testing'
+gem 'faker'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -68,6 +71,10 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 5.0'
 end
 
 group :test do
