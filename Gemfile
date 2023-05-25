@@ -31,7 +31,7 @@ gem "jbuilder"
 gem 'devise'
 gem 'activeadmin'
 gem 'arctic_admin'
-gem 'will_paginate', '~> 3.1.0'
+gem 'kaminari'
 gem 'rspec-rails', group: :test
 
 # Use Redis adapter to run Action Cable in production
