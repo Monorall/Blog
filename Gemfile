@@ -33,6 +33,7 @@ gem 'activeadmin'
 gem 'arctic_admin'
 gem 'kaminari'
 gem 'rails-controller-testing'
+gem 'faker'
 
 
 # Use Redis adapter to run Action Cable in production
