@@ -8,7 +8,9 @@
 
 <p><%= @post.description %></p>
 
-<%= link_to 'Edit', edit_post_path(@post) %>
+<% if current_user == @post.user %>
+  <%= link_to 'Edit', edit_post_path(@post) %> |
+<% end %>
 
 <% if user_signed_in? && @post.user == current_user %>
   <%= link_to 'Delete Post', @post, method: :delete, data: { confirm: 'Are you sure?' } %>

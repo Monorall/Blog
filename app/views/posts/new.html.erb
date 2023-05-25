@@ -1,16 +1,28 @@
-<h1>New Post</h1>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="text-center mb-4">New Post</h1>
 
-<%= form_for @post, html: { multipart: true } do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+      <%= form_for @post, html: { multipart: true, class: 'mb-4' } do |f| %>
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control' %>
+        </div>
 
-  <%= f.label :description %>
-  <%= f.text_area :description %>
+        <div class="form-group">
+          <%= f.label :description %>
+          <%= f.text_area :description, class: 'form-control' %>
+        </div>
 
-  <%= f.label :images %>
-  <%= f.file_field :images, multiple: true %>
+        <div class="form-group">
+          <%= f.label :images %>
+          <%= f.file_field :images, multiple: true, class: 'form-control' %>
+        </div>
 
-  <%= f.submit %>
-<% end %>
+        <%= f.submit class: 'btn btn-primary btn-block' %>
+      <% end %>
 
-<%= link_to 'Back', posts_path %>
+      <%= link_to 'Back', posts_path, class: 'btn btn-secondary btn-block' %>
+    </div>
+  </div>
+</div>
