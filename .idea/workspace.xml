@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="36dac607-bd69-411d-bd4e-02a540f01af5" name="Changes" comment="Improvement of the visible part of the application and bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +166,6 @@
       <workItem from="1684822050260" duration="313000" />
       <workItem from="1684822373555" duration="2770000" />
       <workItem from="1684827699640" duration="1748000" />
-      <workItem from="1685122719890" duration="370000" />
-      <workItem from="1685123112506" duration="3443000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1684753621983</created>
@@ -206,14 +202,7 @@
       <option name="project" value="LOCAL" />
       <updated>1685016619075</updated>
     </task>
-    <task id="LOCAL-00006" summary="Improvement of the visible">
-      <created>1685090491734</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1685090491734</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +215,6 @@
     <MESSAGE value="Add deleted a pots and displaying the user on the navbar panel" />
     <MESSAGE value="Improvement of the visible part of the application and bug fixes" />
     <MESSAGE value="Add tests, bug fixes" />
-    <MESSAGE value="Improvement of the visible" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improvement of the visible" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests, bug fixes" />
   </component>
 </project>
