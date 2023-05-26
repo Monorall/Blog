@@ -4,9 +4,9 @@ class PostsController < ApplicationController
   before_action :correct_user, only: [:edit, :update, :destroy]
   def index
     if params[:scope] == 'my_posts'
-      @posts = current_user.posts.page(params[:page]).per(5)
+      @posts = current_user.posts.page(params[:page]).per(7)
     else
-      @posts = Post.page(params[:page]).per(5)
+      @posts = Post.page(params[:page]).per(7)
     end
   end
 
