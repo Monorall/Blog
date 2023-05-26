@@ -5,7 +5,7 @@
 <%= link_to 'All Posts', posts_path, class: "btn btn-primary mb-3" %>
 
 <% if user_signed_in? %>
-  <%= link_to 'My Posts', posts_path(scope: 'my_posts'), class: "btn btn-secondary mb-3" %>
+  <%= link_to 'My Posts', posts_path, class: "btn btn-primary mb-3" %>
 <% end %>
 
 <div class="container">

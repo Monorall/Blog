@@ -5,3 +5,48 @@
     margin-bottom: 10px;
 }
 
+.navbar-custom {
+    background-color: #123456;
+}
+
+.navbar-custom .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navbar-custom .user-email {
+    color: #ffffff;
+}
+
+.navbar-custom .btn {
+    color: #ffffff;
+}
+
+.navbar-custom .btn:hover {
+    color: #ffffff;
+}
+
+.navbar-custom .nav-link, .navbar-custom .user-email, .navbar-custom .btn {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-custom .btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
