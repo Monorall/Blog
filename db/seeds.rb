@@ -1,4 +1,4 @@
-AdminUser.create!(email: 'admin@gmail.com', password: 'f187ww9f', password_confirmation: 'f187ww9f') if Rails.env.development?
+AdminUser.create!(email: 'admin@gmail.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
 
 # Создание пользователей
 10.times do |n|
