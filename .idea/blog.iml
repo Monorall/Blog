@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 <module version="4">
   <component name="ModuleRunConfigurationManager">
     <shared />
   </component>
+<<<<<<< Updated upstream
 =======
 <module type="RUBY_MODULE" version="4">
   <component name="FacetManager">
@@ -135,10 +139,13 @@
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.6.8, RVM: ruby-3.1.2) [gem]" level="application" />
   </component>
 >>>>>>> origin/develop
+=======
+>>>>>>> Stashed changes
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
     <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
   </component>
+<<<<<<< Updated upstream
   <component name="RailsGeneratorsCache">
     <option name="generators">
       <list>
@@ -586,4 +593,6 @@
       </RakeTaskImpl>
     </option>
   </component>
+=======
+>>>>>>> Stashed changes
 </module>

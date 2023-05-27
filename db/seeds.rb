@@ -9,9 +9,15 @@ AdminUser.create!(email: 'admin@gmail.com', password: 'password', password_confi
 
   # Создание постов для каждого пользователя
   2.times do
-    user.posts.create!(
+    post = user.posts.create!(
       title: Faker::Lorem.sentence(word_count: 3),
       description: Faker::Lorem.paragraph(sentence_count: 3)
+    )
+
+    # Создание комментария для каждого поста
+    post.comments.create!(
+      body: Faker::Lorem.paragraph(sentence_count: 2),
+      user: user
     )
   end
 end
