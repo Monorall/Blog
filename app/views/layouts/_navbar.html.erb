@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+<nav class="navbar  navbar-expand-lg navbar-light bg-light navbar-custom">
   <%= link_to 'Blog', root_path, class: 'navbar-brand' %>
 
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav">
       <% if user_signed_in? %>
         <li class="nav-item">
           <span class="user-email">
@@ -23,7 +23,15 @@
         </li>
       <% end %>
     </ul>
+
+    <div class="d-flex align-items-center" style="margin-left: 90%;">
+      <%= form_with url: search_users_path, method: :get, class: "form-inline my-2 my-lg-0", local: true do %>
+        <%= text_field_tag :email, nil, placeholder: "Search Posts by Email", class: "form-control mr-sm-2" %>
+        <%= submit_tag "Search", class: "btn btn-secondary my-2 my-sm-0" %>
+      <% end %>
+    </div>
   </div>
+
   <div>
     <ul class="navbar-nav ml-auto">
       <% if user_signed_in? %>
@@ -37,5 +45,4 @@
       <% end %>
     </ul>
   </div>
-
 </nav>

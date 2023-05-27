@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   root to: 'posts#index'
-
+  get 'search_users', to: 'users#search'
   resources :posts do
     resources :comments, only: [:create, :destroy]
   end
