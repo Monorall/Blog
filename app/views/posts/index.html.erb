@@ -6,7 +6,7 @@
           <div class="card-body">
             <h5 class="card-title"><%= link_to post.title, post %></h5>
             <p class="card-text"><%= post.description %></p>
-            <p class="card-text"><small class="text-muted">Posted by <%= post.user.email %></small></p>
+            <p class="card-text"><small class="text-muted"> <%= t('post.posted_by') %> <%= post.user.email %></small></p>
           </div>
         </div>
       </div>

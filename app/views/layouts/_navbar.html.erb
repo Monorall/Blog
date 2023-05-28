@@ -1,7 +1,7 @@
 <nav class="navbar  navbar-expand-lg navbar-light bg-light navbar-custom">
   <%= link_to 'Blog', root_path, class: 'navbar-brand' %>
 
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse container" id="navbarNav">
     <ul class="navbar-nav">
       <% if user_signed_in? %>
         <li class="nav-item">
@@ -10,24 +10,35 @@
           </span>
         </li>
         <br>
-        <li class="nav-item">
-          <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+        <li class="nav-item d-flex align-items-center" style="margin-left: 10%;">
+          <%= link_to t('posts.logout'), destroy_user_session_path, method: :delete, class: 'nav-link' %>
         </li>
       <% else %>
-        <li class="nav-item">
-          <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
+        <li class="nav-item d-flex align-items-center" style="margin-left: 10%;">
+          <%= link_to t('posts.signup'), new_user_registration_path, class: 'nav-link' %>
         </li>
-        <br>
-        <li class="nav-item">
-          <%= link_to 'Login', new_user_session_path, class: 'nav-link' %>
+
+        <li class="nav-item d-flex align-items-center" style="margin-left: 10%;">
+          <%= link_to t('posts.login'), new_user_session_path, class: 'nav-link' %>
         </li>
       <% end %>
     </ul>
 
+    <div class="container" style="margin-left: 10%;"  >
+      <li>
+        <%= link_to "English", locale: 'en' %>
+      </li>
+      <li>
+        <%= link_to "Русский", locale: 'ru' %>
+      </li>
+    </div>
+
+
+
     <div class="d-flex align-items-center" style="margin-left: 90%;">
       <%= form_with url: search_users_path, method: :get, class: "form-inline my-2 my-lg-0", local: true do %>
-        <%= text_field_tag :email, nil, placeholder: "Search Posts by Email", class: "form-control mr-sm-2" %>
-        <%= submit_tag "Search", class: "btn btn-secondary my-2 my-sm-0" %>
+        <%= text_field_tag :email, nil, placeholder: t('navbar.search_email'), class: "form-control mr-sm-2" %>
+        <%= submit_tag t('navbar.search'), class: "btn btn-secondary my-2 my-sm-0" %>
       <% end %>
     </div>
   </div>
@@ -35,13 +46,13 @@
   <div>
     <ul class="navbar-nav ml-auto">
       <% if user_signed_in? %>
-        <%= link_to 'New Post', new_post_path, class: "btn btn-success mb-3" %>
+        <%= link_to t('navbar.new_post'), new_post_path, class: "btn btn-success mb-3" %>
       <% end %>
 
-      <%= link_to 'All Posts', posts_path, class: "btn btn-primary mb-3" %>
+      <%= link_to t('navbar.all_posts'), posts_path, class: "btn btn-primary mb-3" %>
 
       <% if user_signed_in? %>
-        <%= link_to 'My Posts', posts_path(scope: 'my_posts'), class: "btn btn-primary mb-3" %>
+        <%= link_to t('navbar.my_posts'), posts_path(scope: 'my_posts'), class: "btn btn-primary mb-3" %>
       <% end %>
     </ul>
   </div>
