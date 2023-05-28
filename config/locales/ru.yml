@@ -1,0 +1,23 @@
+ru:
+  navbar:
+    logout: 'Выйти'
+    signup: 'Регистрация'
+    login: 'Войти'
+    search_email: 'Поиск постов по Email'
+    search: 'Поиск'
+    new_post: 'Новый пост'
+    all_posts: 'Все посты'
+    my_posts: 'Мои посты'
+    update: 'Обновить'
+  post:
+    posted_by: 'Опубликовано'
+    edit: 'Редактировать'
+    delete_post: 'Удалить пост'
+    comments: 'Комментарии'
+    new_comment: 'Новый комментарий'
+    delete: 'Удалить'
+    sign_in_to_comment: 'Вам нужно войти, чтобы оставить комментарий.'
+    back: 'Назад'
+
+
+
